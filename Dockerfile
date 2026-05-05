@@ -20,5 +20,6 @@ RUN npm run build && \
 WORKDIR /app
 COPY sync.py ./
 
-# Use the venv Python — requests, pdfminer.six, ocrmypdf are all pre-installed there
-CMD ["/app/.venv/bin/python3", "/app/sync.py"]
+# Override the base image's ocrmypdf entrypoint
+ENTRYPOINT ["/app/.venv/bin/python3", "/app/sync.py"]
+CMD []
