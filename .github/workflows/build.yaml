@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: ghcr.io/nathanmarlor/rm-sync
+  IMAGE_NAME: ghcr.io/nathanmarlor/remarkable-obsidian-sync
 
 jobs:
   build-and-push:
