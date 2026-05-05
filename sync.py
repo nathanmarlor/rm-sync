@@ -207,6 +207,7 @@ def main() -> None:
 
     session = requests.Session()
     print(f"[rm-sync] starting — polling every {POLL_INTERVAL}s", flush=True)
+    time.sleep(15)
 
     while True:
         print(f"[rm-sync] sync at {datetime.now(timezone.utc).isoformat()}", flush=True)
